@@ -1,0 +1,93 @@
+{
+  "careerSummary": {
+    "content": "Over 9+ years of experience at IBM shipping enterprise software solutions. Specializing in fostering cross-functional teamwork, uniting diverse teams to achieve cohesive and impactful product experiences. Strong technical background, allowing for effective collaboration with developers.",
+    "highlights": [
+      "enterprise software",
+      "Strong technical background"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Lead User Experience Designer",
+      "company": "IBM CIO Design",
+      "period": "Mar 2023 - Present",
+      "location": "New York",
+      "achievements": [
+        {
+          "title": "Gen AI Experience",
+          "content": "Integrated AI tools into IBM's work processes. Automating day-to-day manual tasks for developers, consultants, and sales teams, reducing time spent on routine activities.",
+          "highlights": ["reducing time"]
+        },
+        {
+          "title": "Designing at Scale",
+          "content": "Overhauled internal metrics dashboard, enhancing accessibility of key metrics, allowing the team to identify UX improvements and decreasing in response time to user complaints about their tool.",
+          "highlights": ["decreasing in response time"]
+        },
+        {
+          "title": "Research Advocacy",
+          "content": "Employed strategies for continuously collecting feedback across a variety of internal teams. User insights gleaned from this feedback gave teams clear direction, enabling them to increase NPS across 150+ products.",
+          "highlights": ["increase NPS across 150+ products."]
+        }
+      ]
+    },
+    {
+      "title": "User Experience Designer",
+      "company": "IBM CIO Design",
+      "period": "Jun 2018 - Mar 2023",
+      "location": "New York",
+      "achievements": [
+        {
+          "title": "UX Design at Scale",
+          "content": "Piloted the migration of over 100,000 IBM employees to a new email client. This initiative reduced productivity downtime by providing clear education and timely communications, impacting employees across multiple regions.",
+          "highlights": ["reduced productivity downtime"]
+        },
+        {
+          "title": "Data Visualization Design",
+          "content": "Redesigned the sales plan tool to enhance clarity around compensation structures, increasing comprehension of sales quotas and incentives, improving the sales team's performance and motivation.",
+          "highlights": ["increasing comprehension"]
+        },
+        {
+          "title": "0 to 1 Product Design",
+          "content": "Designed and launched an internal Slack tool to resolve common IT queries, increasing the containment rate and freeing support agents to tackle more complex issues.",
+          "highlights": ["increasing the containment rate"]
+        }
+      ]
+    },
+    {
+      "title": "User Experience Designer",
+      "company": "IBM Watson & Cloud Platform",
+      "period": "Aug 2016 - Jun 2018",
+      "location": "New York",
+      "achievements": [
+        {
+          "title": "Service Design",
+          "content": "Mapped the Bluemix (Cloud platform) developer experience and created a service blueprint, building consensus across product teams. Improved the click-through rate on IBM Cloud marketing pages through heat map analysis. Enhanced documentation and introduced a trial option based on competitive analysis, reducing the time and barriers to entry for setting up a blockchain application",
+          "highlights": ["reducing the time and barriers"]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "Wireframing",
+    "Prototyping in Figma",
+    "Sketch",
+    "Adobe Creative Suite",
+    "User interviews",
+    "Usability testing",
+    "Survey writing",
+    "Basic Python",
+    "HTML",
+    "CSS",
+    "Accessibility troubleshooting"
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts, Honours, Co-op",
+      "major": "Honours Psychology",
+      "minor": "Cognitive & Computer Science Minor",
+      "school": "University of Waterloo",
+      "location": "Waterloo, ON Canada",
+      "period": "Jan 2011 - Apr 2016"
+    }
+  ]
+} 

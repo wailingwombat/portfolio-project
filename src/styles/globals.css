@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 246, 243, 239;
+  --background-end-rgb: 246, 243, 239;
+  /* Main font for the site: change here to update everywhere */
+  --font-sfpro-rounded: 'SF Pro Rounded', 'SF Pro Display', 'SF Pro Text', 'SF Pro Icons', 'Avenir Next', 'Avenir', 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 17, 17, 17;
+    --background-end-rgb: 17, 17, 17;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #F6F3EF;
+  font-family: var(--font-sfpro-rounded);
+}
+
+.dark {
+  background-color: #282C10;
+}
+
+/* Add any custom styles here */
+.speech-bubble {
+  max-width: 200px;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+@media (min-width: 768px) {
+  .speech-bubble::after {
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
