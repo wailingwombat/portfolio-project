@@ -1,5 +1,5 @@
 import { useTheme } from '@/contexts/ThemeContext';
-import ProjectCard from '@/components/projects/ProjectCard';
+import ProjectCard from '@/components/Projects/ProjectCard';
 import { projects } from '@/constants/projects';
 import { projectRoutes } from '@/constants/navigation';
 import { scrollToProjects } from '@/utils/scroll';
