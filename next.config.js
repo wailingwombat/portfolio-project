@@ -12,12 +12,7 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
-    unoptimized: true, // Required for static export
   },
-  output: 'export',  // Enable static exports
-  basePath: '',      // No base path needed for custom domain
-  assetPrefix: '',   // No asset prefix needed for custom domain
-  trailingSlash: true, // Add trailing slashes to all routes
   // Ensure all assets are served over HTTPS
   async headers() {
     return [
@@ -41,15 +36,6 @@ const nextConfig = {
             value: '1; mode=block'
           }
         ],
-      },
-    ]
-  },
-  // Add rewrites for handling 404s
-  async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        destination: '/404.html',
       },
     ]
   },

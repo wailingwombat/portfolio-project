@@ -1,5 +1,5 @@
 'use client'
-import About from '@/components/sections/About';
+import About from '@/components/Sections/About';
 import { useRouter } from 'next/navigation';
 
 export default function Page() {

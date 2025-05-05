@@ -1,7 +1,7 @@
 'use client'
-import Work from '@/components/sections/Work';
-import About from '@/components/sections/About';
-import Resume from '@/components/sections/Resume';
+import Work from '@/components/Sections/Work';
+import About from '@/components/Sections/About';
+import Resume from '@/components/Sections/Resume';
 import { usePathname } from 'next/navigation';
 
 export default function Page({ setActiveTab }) {
