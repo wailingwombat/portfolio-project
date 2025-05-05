@@ -13,6 +13,10 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
   },
+  output: 'export',  // Enable static exports
+  basePath: '',      // No base path needed for custom domain
+  assetPrefix: '',   // No asset prefix needed for custom domain
+  trailingSlash: true, // Add trailing slashes to all routes
 };
 
 module.exports = nextConfig;
