@@ -31,6 +31,11 @@ jobs:
         run: npm run build
       - name: List build output
         run: ls -la ./out
+      - name: Ensure 404.html exists
+        run: |
+          if [ ! -f ./out/404.html ]; then
+            cp ./public/404.html ./out/404.html
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

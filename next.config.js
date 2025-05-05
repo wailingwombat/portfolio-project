@@ -44,6 +44,15 @@ const nextConfig = {
       },
     ]
   },
+  // Add rewrites for handling 404s
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/404.html',
+      },
+    ]
+  },
 };
 
 module.exports = nextConfig;
