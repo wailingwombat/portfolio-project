@@ -1,4 +1,24 @@
-It is a [Next.js](https://nextjs.org/) project built on React and TailwindCSS.
+# Portfolio Website
+
+My personal portfolio website built with Next.js and deployed on GitHub Pages.
+
+## Deployment
+
+This site is deployed to GitHub Pages and uses a custom domain (annanguyen.design). The deployment is automated using GitHub Actions.
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
 ## Getting Started
 
 First, run the development server:
