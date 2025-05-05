@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Build with Next.js
         run: npm run build
+      - name: List build output
+        run: ls -la ./out
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -47,4 +49,8 @@ jobs:
       - name: Verify deployment
         run: |
           echo "Deployed to ${{ steps.deployment.outputs.page_url }}"
-          echo "Custom domain: annanguyen.design" 
+          echo "Custom domain: annanguyen.design"
+          echo "Checking DNS configuration..."
+          dig annanguyen.design +short
+          echo "Checking SSL configuration..."
+          curl -I https://annanguyen.design 
