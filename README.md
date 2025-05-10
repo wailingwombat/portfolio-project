@@ -4,7 +4,7 @@ My personal portfolio website built with Next.js and deployed on GitHub Pages.
 
 ## Deployment
 
-This site is deployed to GitHub Pages and uses a custom domain (annanguyen.design). The deployment is automated using GitHub Actions.
+This site is deployed to Vercel and uses a custom domain (annanguyen.design).
 
 ## Development
 
