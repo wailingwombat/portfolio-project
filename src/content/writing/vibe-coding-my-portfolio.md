@@ -1,5 +1,5 @@
 ---
-title: "Vibe Coding My Portfolio
+title: "Vibe Coding My Portfolio"
 date: "2025-05-08"
 readingTime: "10 min read"
 ---
