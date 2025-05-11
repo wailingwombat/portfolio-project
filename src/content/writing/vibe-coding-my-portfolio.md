@@ -103,8 +103,8 @@ Start small. Break it down. Work like you would if you were building components 
 * Jessica Ly - Sat through *so many* of my presentations + lil 🧀💔
 * David Yen - Tough love that leveled up my design craft
 * Kellie Chan -  Moral support forged in the fires of 👁️🐝Ⓜ️ friendship
-* Varsha Radhakrishnan - Always reminding me to “just be”
-* Chhavi Kankari - Catches mistakes I didn’t even know I made
+* Varsha Radhakrishnan - Always reminding me to "just be"
+* Chhavi Kankari - Catches mistakes I didn't even know I made
 * Michael Palma - Answered my unsolicited dev questions
 
 
@@ -116,4 +116,4 @@ Start small. Break it down. Work like you would if you were building components 
 * [Professor's lecture on writing for the reader](https://youtu.be/vtIzMaLkCaM?list=PLCadRh9rZJxff5lfylnRGqPPZr_VUEwAb&t=238)
 * [Formatting case study tutorial](https://www.youtube.com/watch?v=emSv9TTHZVY&list=PLCadRh9rZJxff5lfylnRGqPPZr_VUEwAb&index=15&t=1122s)
 * [Effective presentation technique](https://www.youtube.com/watch?v=dh0pJdgY6Lc&list=PLCadRh9rZJxff5lfylnRGqPPZr_VUEwAb&index=10)
-* [Sarah’s newsletters and how to “brand yourself”](https://www.sarahdoody.com/ux-resources/)
+* [Sarah's newsletters and how to "brand yourself"](https://www.sarahdoody.com/ux-resources/)
