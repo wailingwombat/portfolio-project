@@ -29,6 +29,7 @@ export const projects = [
         image: '/images/projects/dashboard-survey/survey_demo.webp',
         imageFallback: '/images/projects/dashboard-survey/survey_demo.gif',
         alt: 'Animated demo of the redesigned internal survey dashboard showing user feedback flow.',
+        unoptimized: true,
         imageProps: {
           priority: true,
           className: 'object-cover'
@@ -90,7 +91,8 @@ export const projects = [
             image: '/images/projects/dashboard-survey/logo_iteration.webp',
             imageFallback: '/images/projects/dashboard-survey/logo_iteration.gif',
             description: 'Logo iterations',
-            alt: 'Animated gif showing logo design iterations.'
+            alt: 'Animated gif showing logo design iterations.',
+            unoptimized: true
           }
         ]
       },
@@ -136,6 +138,7 @@ export const projects = [
         image: '/images/projects/it-support-chatbot/demo.webp',
         imageFallback: '/images/projects/it-support-chatbot/demo.gif',
         alt: 'Animated demo of the IT support chatbot interface in action.',
+        unoptimized: true,
         imageProps: {
           priority: true,
           className: 'object-cover'
@@ -264,12 +267,13 @@ export const projects = [
           {
             image: '/images/projects/it-support-chatbot/one-clickbutton.gif',
             description: 'Collaborating with the technical team, we devised a temporary solution, allowing users to try it immediately for the launch.',
-            alt: 'Animated gif of one-click button for chatbot launch.'
+            alt: 'Animated gif of one-click button for chatbot launch.',
+            unoptimized: true
           },
           {
             image: '/images/projects/it-support-chatbot/search-hybrid.png',
             description: 'I came up with a hybrid search to address gaps in information while the content team continued to expand the corpus.',
-            alt: 'Hybrid search interface for chatbot.'
+            alt: 'Hybrid search interface for chatbot.',
           },
         ]
       },
@@ -280,7 +284,7 @@ export const projects = [
           {
             image: '/images/projects/it-support-chatbot/slack-outages.png',
             description: 'Outages I observed was a common question on Slack. This feature would be usable on a day-to-day basis rather than just for emergencies.',
-            alt: 'Slack outages feature for chatbot.'
+            alt: 'Slack outages feature for chatbot.',
           },
         ]
       },
@@ -311,7 +315,8 @@ export const projects = [
           priority: true,
           className: 'object-cover'
         },
-        alt: 'Animated gif showing feedback flow for chatbot.'
+        alt: 'Animated gif showing feedback flow for chatbot.',
+        unoptimized: true
       },
       {
         id: 'launchpoint',
@@ -395,7 +400,8 @@ export const projects = [
           priority: true,
           className: 'object-contain'
         },
-        alt: 'Animated gif showing updates to legacy system UI during migration.'
+        alt: 'Animated gif showing updates to legacy system UI during migration.',
+        unoptimized: true
       },
       {
         id: 'research-methods',
@@ -553,7 +559,8 @@ export const projects = [
           priority: true,
           className: 'object-cover'
         },
-        alt: 'Animated gif of IBM Blockchain application interface.'
+        alt: 'Animated gif of IBM Blockchain application interface.',
+        unoptimized: true
       },
       {
         id: 'buy-in-blockchain',
@@ -571,7 +578,8 @@ export const projects = [
           priority: true,
           className: 'object-cover'
         },
-        alt: 'Heatmap visualization for IBM Blockchain homepage.'
+        alt: 'Heatmap visualization for IBM Blockchain homepage.',
+        unoptimized: true
       },
       {
         id: 'heatmap',

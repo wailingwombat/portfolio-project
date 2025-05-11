@@ -9,7 +9,8 @@ const wombatFacts = [
   "Wombats are herbivores and eat grass, roots, and bark.",
   "Wombats are marsupials native to Australia.",
   "Baby wombats are called joeys.",
-  "Wombats can run up to 25 miles per hour for short distances."
+  "Wombats can run up to 25 miles per hour for short distances.",
+  "My name is Abhi"
 ];
 
 export default function Wombat() {

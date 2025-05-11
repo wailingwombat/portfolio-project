@@ -457,9 +457,9 @@ export default function ProjectLayout({ project, setActiveTab }) {
       </div>
 
       {/* Main Content */}
-      <div className="lg:pr-64">
+      <div className="lg:pr-64 xl:pl-24">
       {/* Back Button / Breadcrumb */}
-      <div className="fixed left-8 top-25 hidden lg:block">
+      <div className="fixed left-8 top-25 hidden xl:block">
         <Button
           onClick={handleBackToWork}
           className="inline-flex items-center"

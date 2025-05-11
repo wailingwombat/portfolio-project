@@ -11,8 +11,8 @@ export default function ThemeToggle() {
       document.body.style.backgroundColor = '#202124';
     } else {
       document.documentElement.classList.remove('dark');
-      document.documentElement.style.backgroundColor = '#F6F3EF';
-      document.body.style.backgroundColor = '#F6F3EF';
+      document.documentElement.style.backgroundColor = '#FFFFFF';
+      document.body.style.backgroundColor = '#FFFFFF';
     }
     setDarkMode(!darkMode);
   };

@@ -157,8 +157,28 @@ export default function About() {
       company: "Kaleidoscope",
       url: "https://www.linkedin.com/in/david-y-e-n/",
       platform: "linkedin"
+    },
+    {
+      name: "Arin Clement",
+      role: "User Experience Designer",
+      company: "IBM",
+      url: "https://www.linkedin.com/in/arinclement/",
+      platform: "linkedin"
+    },
+    {
+      name: "Nimsi G",
+      role: "UX Researcher",
+      company: "IBM",
+      url: "https://www.linkedin.com/in/nimsig/",
+      platform: "linkedin"
+    },
+    {
+      name: "Chi Lee",
+      role: "Creative Director",
+      company: "Zacht Studios",
+      url: "https://www.linkedin.com/in/chilee22/",
+      platform: "linkedin"
     }
-
   ];
 
   return (
@@ -180,7 +200,7 @@ export default function About() {
             <p className={`text-base md:text-lg ${darkMode ? "text-white" : "text-[#333]"} leading-relaxed mb-6`}>
               I bring a research-driven perspective into my projects and can easily 
               communicate and collaborate with developers and stakeholders across teams. 
-              I find it exciting to design functional, accessible solutions that is 
+              I find it exciting to design functional, accessible solutions that are 
               scaled for a large number of people.
             </p>
             <p className={`text-base md:text-lg ${darkMode ? "text-white" : "text-[#333]"} leading-relaxed`}>

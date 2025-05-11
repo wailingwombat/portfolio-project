@@ -143,6 +143,15 @@ export default function Resume() {
       </div>
 
       <div className="mb-8">
+        <h2 className={`text-3xl font-bold mb-4 ${
+          darkMode ? "text-white" : "text-gray-900"
+        }`}>
+          Skills
+        </h2>
+        <Skills skills={resumeContent.skills} />
+      </div>
+
+      <div className="mb-8">
         <h2 className={`text-lg md:text-xl lg:text-2xl font-bold mb-4 ${
           darkMode ? "text-white" : "text-gray-900"
         }`}>
@@ -151,15 +160,6 @@ export default function Resume() {
         {resumeContent.experience.map((exp, index) => (
           <ExperienceItem key={index} {...exp} />
         ))}
-      </div>
-
-      <div className="mb-8">
-        <h2 className={`text-3xl font-bold mb-4 ${
-          darkMode ? "text-white" : "text-gray-900"
-        }`}>
-          Skills
-        </h2>
-        <Skills skills={resumeContent.skills} />
       </div>
 
       <div className="mb-8">
