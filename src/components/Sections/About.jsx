@@ -178,6 +178,13 @@ export default function About() {
       company: "Zacht Studios",
       url: "https://www.linkedin.com/in/chilee22/",
       platform: "linkedin"
+    },
+    {
+      name: "Jessica Wu Ramirez",
+      role: "User Experience Engineer",
+      company: "IBM",
+      url: "https://hallopello.com/who/",
+      platform: "hallopello.com/who/"
     }
   ];
 
