@@ -13,7 +13,7 @@ export const metadata = {
     siteName: 'Hanh Nguyen Portfolio',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://www.annanguyen.design/images/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Hanh Nguyen - UX Designer Portfolio',
@@ -26,7 +26,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Hanh Nguyen Portfolio',
     description: 'UX Designer at IBM based in NYC',
-    images: ['/og-image.jpg'],
+    images: ['https://www.annanguyen.design/images/og-image.jpg'],
   },
   robots: {
     index: true,
