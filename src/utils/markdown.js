@@ -3,6 +3,7 @@ import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import React from 'react';
+import Image from 'next/image';
 
 export function MarkdownContent({ children }) {
   console.log('Markdown content:', children); // Debug log
@@ -30,10 +31,11 @@ export function MarkdownContent({ children }) {
             return (
               <figure className="my-8">
                 <div className="relative w-full aspect-video mb-2">
-                  <img
+                  <Image
                     src={imgNode.properties.src}
                     alt={imgNode.properties.alt}
-                    className="object-cover rounded-lg w-full h-full"
+                    fill
+                    className="object-cover rounded-lg"
                   />
                 </div>
                 {imgNode.properties.alt && (
@@ -93,10 +95,11 @@ export function MarkdownContent({ children }) {
         img: ({ node, alt, src, ...props }) => (
           <figure className="my-8">
             <div className="relative w-full aspect-video mb-2">
-              <img
+              <Image
                 src={src}
                 alt={alt}
-                className="object-cover rounded-lg w-full h-full"
+                fill
+                className="object-cover rounded-lg"
                 {...props}
               />
             </div>

@@ -5,6 +5,33 @@ import '@/styles/globals.css';
 export const metadata = {
   title: 'Hanh Nguyen Portfolio',
   description: 'UX Designer at IBM based in NYC',
+  metadataBase: new URL('https://hanhnguyen.design'),
+  openGraph: {
+    title: 'Hanh Nguyen Portfolio',
+    description: 'UX Designer at IBM based in NYC',
+    url: 'https://hanhnguyen.design',
+    siteName: 'Hanh Nguyen Portfolio',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Hanh Nguyen - UX Designer Portfolio',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hanh Nguyen Portfolio',
+    description: 'UX Designer at IBM based in NYC',
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -18,6 +45,25 @@ export default function RootLayout({ children }) {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+(function() {
+  try {
+    var theme = localStorage.getItem('theme');
+    if (
+      theme === 'dark' ||
+      (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+      document.documentElement.style.backgroundColor = '#202124';
+      document.body.style.backgroundColor = '#202124';
+    }
+  } catch (e) {}
+})();
+            `,
+          }}
         />
       </head>
       <body>

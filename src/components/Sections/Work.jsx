@@ -49,7 +49,7 @@ export default function Work({ setActiveTab }) {
             I'm Hanh (Anna) product designer based in NYC.
           </h1>
           <p className={`text-xl md:text-2xl max-w-2xl ${
-            darkMode ? "text-gray-300" : "text-gray-500"
+            darkMode ? "text-gray-300" : "text-gray-700"
           }`}>
             I specialize in connecting teams and turning complex systems into intuitive user experiences.
           </p>
