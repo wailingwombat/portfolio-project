@@ -5,6 +5,11 @@ export const mainNavItems = [
     path: '/',
   },
   {
+    id: 'writing',
+    label: 'Writing',
+    path: '/writing',
+  },
+  {
     id: 'about',
     label: 'About',
     path: '/about',

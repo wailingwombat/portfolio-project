@@ -108,7 +108,8 @@ export function BlogImage({ src, alt, caption }) {
         <Image
           src={src}
           alt={alt}
-          fill
+          width={1600}
+          height={900}
           className="object-cover rounded-lg"
         />
       </div>

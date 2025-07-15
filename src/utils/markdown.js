@@ -6,7 +6,18 @@ import React from 'react';
 import Image from 'next/image';
 
 export function MarkdownContent({ children }) {
-  console.log('Markdown content:', children); // Debug log
+  // Create a closure to track the first few images
+  const imageTracker = React.useMemo(() => {
+    let imageCount = 0;
+    return {
+      isFirstImage: () => {
+        imageCount++;
+        // Add priority to first 3 images to cover LCP variations
+        return imageCount <= 3;
+      }
+    };
+  }, []);
+
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
@@ -28,14 +39,18 @@ export function MarkdownContent({ children }) {
           if (hasOnlyImage) {
             // Create a figure element for the image
             const imgNode = node.children[0];
+            const isFirstImage = imageTracker.isFirstImage();
+            
             return (
               <figure className="my-8">
-                <div className="relative w-full aspect-video mb-2">
+                <div className="w-full mb-2 overflow-hidden rounded-lg">
                   <Image
                     src={imgNode.properties.src}
                     alt={imgNode.properties.alt}
-                    fill
-                    className="object-cover rounded-lg"
+                    width={1600}
+                    height={900}
+                    className="object-cover rounded-lg w-full h-auto"
+                    priority={isFirstImage}
                   />
                 </div>
                 {imgNode.properties.alt && (
@@ -92,24 +107,30 @@ export function MarkdownContent({ children }) {
           );
         },
         // Customize image with caption
-        img: ({ node, alt, src, ...props }) => (
-          <figure className="my-8">
-            <div className="relative w-full aspect-video mb-2">
-              <Image
-                src={src}
-                alt={alt}
-                fill
-                className="object-cover rounded-lg"
-                {...props}
-              />
-            </div>
-            {alt && (
-              <figcaption className="text-center text-sm text-gray-500 mt-2">
-                {alt}
-              </figcaption>
-            )}
-          </figure>
-        ),
+        img: ({ node, alt, src, ...props }) => {
+          const isFirstImage = imageTracker.isFirstImage();
+          
+          return (
+            <figure className="my-8">
+              <div className="w-full mb-2 overflow-hidden rounded-lg">
+                    <Image
+                      src={src}
+                      alt={alt}
+                      width={1600}
+                      height={900}
+                      className="object-cover rounded-lg"
+                      priority={isFirstImage}
+                      {...props}
+                />
+              </div>
+              {alt && (
+                <figcaption className="text-center text-sm text-gray-500 mt-2">
+                  {alt}
+                </figcaption>
+              )}
+            </figure>
+          );
+        },
       }}
     >
       {children}
